@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    float minTime = 15;
+    float minTime = 14;
 
     float maxTime = 20;
 
