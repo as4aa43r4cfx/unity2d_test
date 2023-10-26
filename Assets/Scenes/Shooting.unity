@@ -2264,11 +2264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4679790843697605457, guid: 9df4cc0afbff2e242880c66ebf89b8db, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4679790843697605457, guid: 9df4cc0afbff2e242880c66ebf89b8db, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035485430124419374, guid: 9df4cc0afbff2e242880c66ebf89b8db, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df4cc0afbff2e242880c66ebf89b8db, type: 3}
