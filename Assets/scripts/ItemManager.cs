@@ -29,7 +29,7 @@ public class ItemManager : MonoBehaviour
         if(currentTime > createTime)
         {
             GameObject enemy = Instantiate(ItemFactory);
-
+            
             enemy.transform.position = transform.position;
 
             currentTime = 2;

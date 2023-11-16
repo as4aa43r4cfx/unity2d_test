@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
     //현재점수 Ui
     public Text currentScoreUI;
     //현재점수
-    private int currentScore;
+    public int currentScore;
     //최고점수 UI
     public Text bestScoreUI;
     //최고 점수

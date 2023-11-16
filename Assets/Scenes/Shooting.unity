@@ -993,6 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScoreUI: {fileID: 671657751}
+  currentScore: 0
   bestScoreUI: {fileID: 912311329}
 --- !u!4 &729194521
 Transform:

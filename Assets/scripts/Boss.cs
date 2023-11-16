@@ -7,14 +7,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScoreManager js  = GameObject.Find("Scoremanager").GetComponent<Scoremanager>();
-
-        if (js.currentScore > 25)
-        {
-
-        }
-
-
+        
 
     }
 

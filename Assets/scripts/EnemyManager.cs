@@ -22,6 +22,7 @@ public class EnemyManager : MonoBehaviour
     float creatTime;
     float currentTime = 0;
 
+
     //1. 태어 날 때
     void Start()
     {
@@ -43,6 +44,7 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ScoreManager cs = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
         currentTime += Time.deltaTime;
         //1.생성 시간이 되었으니까
         if (currentTime > creatTime)
@@ -63,6 +65,15 @@ public class EnemyManager : MonoBehaviour
 
             creatTime = Random.Range(minTime, maxTime);
             currentTime = 0;
+        }
+
+        if (cs.currentScore > 2)
+        {
+            Debug.Log("boss");
+            Debug.Log(cs.currentScore);
+            //gameObject.SetActive(true);
+            //transform.position = new Vector3(0, 4, 0);
+
         }
     }
 }
