@@ -13,6 +13,7 @@ public class EnemyManager : MonoBehaviour
     public Transform[] spawnPoints;
 
     public GameObject enemyFactory;
+    public GameObject boss;
 
     // 생성할 최소시간
     public float minTime = 0.5f;
@@ -26,6 +27,10 @@ public class EnemyManager : MonoBehaviour
     //1. 태어 날 때
     void Start()
     {
+        boss = GameObject.Find("boss");
+        
+        boss.SetActive(false);
+
         creatTime = Random.Range(minTime, maxTime);
         //2. 오브젝트풀을 에너미들을 담을 수 있는 크기로 만들어 준다.
         enemyObjectPool = new List<GameObject>();
@@ -38,6 +43,8 @@ public class EnemyManager : MonoBehaviour
             enemyObjectPool.Add(enemy);
             // 비활성화 시키자.
             enemy.SetActive(false);
+
+            
         }
     }
 
@@ -71,7 +78,7 @@ public class EnemyManager : MonoBehaviour
         {
             Debug.Log("boss");
             Debug.Log(cs.currentScore);
-            //gameObject.SetActive(true);
+            boss.SetActive(true);
             //transform.position = new Vector3(0, 4, 0);
 
         }
