@@ -11,6 +11,18 @@ public class playermode : MonoBehaviour
     //현재점수 Ui
     public Text countUI;
 
+    public GameObject Shield;
+
+
+    void Start()
+    {
+        Shield = GameObject.Find("Shield");
+
+        Shield.SetActive(false);
+
+
+    }
+
 
 
 
@@ -29,6 +41,12 @@ public class playermode : MonoBehaviour
 
         transform.position += dir * speed * Time.deltaTime;
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Space");
+            Shield.SetActive(true);
+        }
+
 
     }
     private void OnCollisionEnter(Collision other)
@@ -40,4 +58,5 @@ public class playermode : MonoBehaviour
             Debug.Log("hello");
         }
     }
+
 }
