@@ -41,7 +41,9 @@ public class playermode : MonoBehaviour
 
         transform.position += dir * speed * Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+//if (Input.GetKeyDown(KeyCode.Space))
+
+        if (count>1)
         {
             Debug.Log("Space");
             Shield.SetActive(true);
