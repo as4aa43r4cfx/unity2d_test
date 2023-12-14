@@ -43,11 +43,11 @@ public class playermode : MonoBehaviour
 
 //if (Input.GetKeyDown(KeyCode.Space))
 
-        if (count>1)
-        {
-            Debug.Log("Space");
-            Shield.SetActive(true);
-        }
+        //if (count>1)
+        //{
+           // Debug.Log("Space");
+            //Shield.SetActive(true);
+        //}
 
 
     }
@@ -56,8 +56,9 @@ public class playermode : MonoBehaviour
         if (other.gameObject.name.Contains("item"))
         {
             count++;
-            countUI.text = "Life point:" + count;
+            countUI.text = "Shield:" + count;
             Debug.Log("hello");
+            Shield.SetActive(true);
         }
     }
 

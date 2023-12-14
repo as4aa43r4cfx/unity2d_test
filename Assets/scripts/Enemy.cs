@@ -67,6 +67,11 @@ public class Enemy : MonoBehaviour
             // list 에 총알 삽입
             player.bulletObjectPool.Add(other.gameObject);
         }
+        else if (other.gameObject.name.Contains("Shield"))
+        {
+            other.gameObject.SetActive(false);
+        }
+  
         //3.그렇지 않으면 제거
         else
         {
