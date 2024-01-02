@@ -733,11 +733,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9205098189162429582, guid: a3ca1e618988a6e46944578eef4bd2bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 9205098189162429582, guid: a3ca1e618988a6e46944578eef4bd2bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9205098189162429582, guid: a3ca1e618988a6e46944578eef4bd2bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1475,11 +1475,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9205098189162429570, guid: a3ca1e618988a6e46944578eef4bd2bb, type: 3}
   m_PrefabInstance: {fileID: 491142965}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1439545419 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9205098189162429582, guid: a3ca1e618988a6e46944578eef4bd2bb, type: 3}
-  m_PrefabInstance: {fileID: 491142965}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1439545420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,12 +1487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86117058602a1514bbf4e162a0e30671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1439545419}
-  direction: {x: 0, y: 0, z: 0}
-  velocity: 0
-  default_velocity: 0
-  accelaration: 0
-  default_direction: {x: 0, y: 0, z: 0}
+  speed: 5
 --- !u!1 &1445757900
 GameObject:
   m_ObjectHideFlags: 0
