@@ -44,7 +44,7 @@ public class bossmove : MonoBehaviour
     {
         
 
-        pos = this.GameObject.transform.position;
+        pos = transform.position;
         
         
         if (pos.x > 2.5) 
