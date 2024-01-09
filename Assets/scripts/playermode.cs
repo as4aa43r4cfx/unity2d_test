@@ -57,7 +57,7 @@ public class playermode : MonoBehaviour
         {
             count++;
             countUI.text = "Shield:" + count;
-            Debug.Log("hello");
+           // Debug.Log("hello");
             Shield.SetActive(true);
         }
     }

@@ -76,8 +76,8 @@ public class EnemyManager : MonoBehaviour
 
         if (cs.currentScore > 2)
         {
-            Debug.Log("boss");
-            Debug.Log(cs.currentScore);
+            //Debug.Log("boss");
+            //Debug.Log(cs.currentScore);
             boss.SetActive(true);
             //transform.position = new Vector3(0, 4, 0);
 

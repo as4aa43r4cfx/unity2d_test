@@ -22,7 +22,7 @@ public class Bossattack : MonoBehaviour
             GameObject BBullet = Instantiate(BBulletFactory);
 
             BBullet.transform.position = transform.position;
-            currentTime = 0;
+            currentTime = 0;    
         }
         
     }

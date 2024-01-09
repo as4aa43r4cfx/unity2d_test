@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int count;
     public float speed = 10;
+    public GameObject boss;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        boss = GameObject.Find("boss");
 
     }
 
@@ -16,5 +20,19 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.up * speed * Time.deltaTime;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+
+
+        if (other.gameObject.name.Contains("boss"))
+        {
+            count++;
+            if(count>15)
+                Destroy(boss);
+
+
+        }
     }
 }
