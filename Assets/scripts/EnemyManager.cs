@@ -74,7 +74,7 @@ public class EnemyManager : MonoBehaviour
             currentTime = 0;
         }
 
-        if (cs.currentScore > 2)
+        if (cs.currentScore > 10)
         {
             //Debug.Log("boss");
             //Debug.Log(cs.currentScore);

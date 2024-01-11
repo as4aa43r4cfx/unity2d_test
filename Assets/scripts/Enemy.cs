@@ -43,7 +43,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ScoreManager cs = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
         transform.position += dir * speed * Time.deltaTime;
+        if(cs.currentScore > 10)
+        {
+            Destroy(gameObject);
+        }
     }
 
     //1. 적이 다른 물체와 충돌 했으니까.
